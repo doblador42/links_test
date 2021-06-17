@@ -1,11 +1,11 @@
 # links test
 ## This is a repository to test if links have the same effect between operating systems
 
-## results:
+## results after a fresh cloning:
 
 ### Linux:
 
-- [ ] Soft links propagate on OS
+- [x] Soft links propagate on OS
 - [ ] Hard links propagate on OS
  
 ### Windows 10:
@@ -15,7 +15,7 @@
 
 ### MacOS & BSD (bsd coreutils)
 
-- [ ] Soft links propagate on OS
+- [x] Soft links propagate on OS
 - [ ] Hard links propagate on OS
 
 
@@ -33,8 +33,62 @@
 		do ln original_symbolic_link/GoodbyeClass.java "$directory"/src/main/java/gr/uop/;
 	done;
 ```
+### files at the start:
+> ./original_symbolic_link/HelloClass.java:
+
+``` java
+package gr.uop;
+
+public class HelloClass {
+    public  static String speak(){
+        return "hello! ";
+    }
+}
+```
+> ./original_hard_link/GoodbyeClass.java:
+
+``` java
+package gr.uop;
+
+public class GoodbyeClass {
+    public  static String speak(){
+        return "goodbye ";
+    }
+}
+```
+
+![Before fresh cloning](./Before.png)
+
+### files after editing:
+> ./original_symbolic_link/HelloClass.java (Soft Linked):
+
+``` java
+package gr.uop;
+
+public class HelloClass {
+    public  static String speak(){
+        return "I already knew... ";
+    }
+}
+```
+> ./original_hard_link/GoodbyeClass.java (Hard Linked):
+
+``` java
+package gr.uop;
+
+public class GoodbyeClass {
+    public  static String speak(){
+        return "42 is the "Answer to the Ultimate Question of Life, the Universe, and Everything ";
+    }
+}
+```
+
+![After fresh cloning](./After.png)
+
 
 	
 ## Why?
 Git doesn't take inodes under consideration.
 after the repository is freshly cloned, **inodes** are not the same 
+
+---
