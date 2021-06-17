@@ -10,7 +10,7 @@
  
 ### Windows 10:
 
-- [ ] Soft links propagate on OS
+- [x] Soft links propagate on OS
 - [ ] Hard links propagate on OS
 
 ### MacOS & BSD (bsd coreutils)
@@ -92,5 +92,6 @@ So in conclusion hard links from the filesystem are treated as normal files from
 ## Why?
 Git doesn't take inodes under consideration.
 after the repository is freshly cloned, **inodes** are not the same 
+
 
 ---
