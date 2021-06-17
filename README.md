@@ -85,6 +85,8 @@ public class GoodbyeClass {
 
 ![After fresh cloning](./After.png)
 
+So in conclusion hard links from the filesystem are treated as normal files from git
+
 
 	
 ## Why?
