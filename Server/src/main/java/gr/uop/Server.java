@@ -13,7 +13,7 @@ public class Server extends Application {
 
     @Override
     public void start(Stage stage) {
-        var label = new Label("You say " + HelloClass.speak() + "and I say " + HelloClass.speak() );
+        var label = new Label("You say " + GoodbyeClass.speak() + "and I say " + HelloClass.speak() );
         var scene = new Scene(new StackPane(label), 640, 480);
         stage.setScene(scene);
         stage.show();

@@ -2,6 +2,6 @@ package gr.uop;
 
 public class HelloClass {
     public  static String speak(){
-        return "Hello! ";
+        return "hello! ";
     }
 }

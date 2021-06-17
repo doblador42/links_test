@@ -1,7 +1,7 @@
 # links test
 ## This is a repository to test if links have the same effect between operating systems
 
-##results:
+## results:
 
 ### Linux:
 
@@ -29,8 +29,12 @@
 ```
 ### Hard Links:
 ```bash
-	for directory in {Client,Server};do ln  hello_man.java "$directory"/src/main/java/gr/uop/;done;
+	for directory in {Client,Server}
+		do ln original_symbolic_link/GoodbyeClass.java "$directory"/src/main/java/gr/uop/;
+	done;
 ```
 
+	
 ## Why?
 Git doesn't take inodes under consideration.
+after the repository is freshly cloned, **inodes** are not the same 
