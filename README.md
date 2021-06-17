@@ -67,7 +67,7 @@ package gr.uop;
 
 public class HelloClass {
     public  static String speak(){
-        return "I already knew... ";
+        return "what else? ";
     }
 }
 ```

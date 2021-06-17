@@ -9,11 +9,11 @@ import javafx.stage.Stage;
 /**
  * JavaFX App
  */
-public class Client extends Application {
+public class Server extends Application {
 
     @Override
     public void start(Stage stage) {
-        var label = new Label("Hello, JavaFX Client");
+        var label = new Label("You say " + GoodbyeClass.speak() + "and I say " + HelloClass.speak() );
         var scene = new Scene(new StackPane(label), 640, 480);
         stage.setScene(scene);
         stage.show();
