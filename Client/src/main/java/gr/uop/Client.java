@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 /**
  * JavaFX App
  */
-public class Server extends Application {
+public class Client extends Application {
 
     @Override
     public void start(Stage stage) {
