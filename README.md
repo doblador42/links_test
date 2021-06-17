@@ -23,11 +23,14 @@
 
 ### Symbolic Links:
 ```bash
-	for directory in {Client,Server};do ln -sfr original_symbolic_link/HelloClass.java "$directory"/src/main/java/gr/uop/;done;
+	for directory in {Client,Server}
+		do ln -sfr original_symbolic_link/HelloClass.java "$directory"/src/main/java/gr/uop/;
+	done;
 ```
 ### Hard Links:
 ```bash
 	for directory in {Client,Server};do ln  hello_man.java "$directory"/src/main/java/gr/uop/;done;
 ```
 
-
+## Why?
+Git doesn't take inodes under consideration.
