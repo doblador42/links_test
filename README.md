@@ -30,7 +30,7 @@
 ### Hard Links:
 ```bash
 	for directory in {Client,Server}
-		do ln original_symbolic_link/GoodbyeClass.java "$directory"/src/main/java/gr/uop/;
+		do ln original_hard_link/GoodbyeClass.java "$directory"/src/main/java/gr/uop/;
 	done;
 ```
 ### files at the start:
