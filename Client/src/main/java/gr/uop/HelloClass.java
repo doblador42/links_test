@@ -1,0 +1,1 @@
+../../../../../../original_symbolic_link/HelloClass.java
